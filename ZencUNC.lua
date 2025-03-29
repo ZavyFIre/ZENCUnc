@@ -54,7 +54,7 @@ end
 -- Header and summary
 
 print("\n")
-Print("Executing ZencUNC Module")
+print("Executing ZencUNC Module")
 
 
 print([[
