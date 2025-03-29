@@ -1,21 +1,3 @@
-
-
-
-Print("Executing ZencUNC Module")
-
-
-print([[
-/$$$$$$$$                              
-|_____ $$                               
-     /$$/   /$$$$$$  /$$$$$$$   /$$$$$$$
-    /$$/   /$$__  $$| $$__  $$ /$$_____/
-   /$$/   | $$$$$$$$| $$  \ $$| $$      
-  /$$/    | $$_____/| $$  | $$| $$      
- /$$$$$$$$|  $$$$$$$| $$  | $$|  $$$$$$$
-|________/ \_______/|__/  |__/ \_______/
-]])
-
-
 local passes, fails, undefined = 0, 0, 0
 local running = 0
 
@@ -72,9 +54,21 @@ end
 -- Header and summary
 
 print("\n")
+Print("Executing ZencUNC Module")
 
+
+print([[
+/$$$$$$$$                              
+|_____ $$                               
+     /$$/   /$$$$$$  /$$$$$$$   /$$$$$$$
+    /$$/   /$$__  $$| $$__  $$ /$$_____/
+   /$$/   | $$$$$$$$| $$  \ $$| $$      
+  /$$/    | $$_____/| $$  | $$| $$      
+ /$$$$$$$$|  $$$$$$$| $$  | $$|  $$$$$$$
+|________/ \_______/|__/  |__/ \_______/
+]])
 print("UNC Environment Check")
-print("✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases\n")
+print("✅ - Pass, ⛔ - Fail, ⏺️ - No test, ⚠️ - Missing aliases\n"
 
 task.defer(function()
 	repeat task.wait() until running == 0
